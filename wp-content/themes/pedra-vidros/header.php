@@ -33,6 +33,8 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="wrap">
+    <div class="backgroundHeader">
+    <div class="container-fluid">
 <header>
     <a href="index.php" >
         <div  id="logo" class = "barraHeader">
@@ -54,6 +56,7 @@
         Servicos
         </div>
         </a>
+
         <a >
     <div class = "barraHeader" id="Contato">
         Contato
@@ -61,17 +64,22 @@
      </a>
     
 </header>
+</div>
+
+</div>
     <div class="content-wrapper">
 
-
-
-
+    
       <style>
 div{
     width: 100%;
 }
+
 #imglogo{
     width:80px;
+}
+.backgroundHeader{
+    background-color:black;
 }
 #Inicio{
   width:20%;
@@ -87,20 +95,23 @@ a{
     color: inherit;
     text-decoration: none;
 }
+
 .barraHeader {
   position: relative;
   display: inline-block;
   float:left;
-  width:16%;
+  width:20%;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #07dfb4;
   text-align:center;
   color: white;
 }
+
 .limpafloat{
     clear:both;
 }
+
 body {
 padding: 0 0;
 margin: 0 0;
