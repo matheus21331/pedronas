@@ -15,4 +15,8 @@ with less, you can download software to automatically convert or use the online 
   -moz-opacity: 0.75;
   opacity: 0.75; }
 
+  body{
+    background-color:black;
+  }
+
 /*# sourceMappingURL=style.css.map */
