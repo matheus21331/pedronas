@@ -32,7 +32,6 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="wrap">
-<div class="backgroundHeader">
     <div class="container-fluid">
         <header>
             <a href="index.php" >
@@ -61,7 +60,6 @@
                 </div>
             </a>
         </header>
-    </div>
 </div>
   
 
@@ -72,21 +70,14 @@
     }
 
     #imglogo{
+        height:10px;
         width:80px;
     }
-    .backgroundHeader{
-        background-color:black;
-    }
-    #Inicio{
-    width:20%;
-    position: relative;
-    float:left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #07dfb4;
-    text-align:center;
-    }
+    
 
+    .container-fluid{
+        padding:0;
+    }
     a{
         color: inherit;
         text-decoration: none;
@@ -99,9 +90,9 @@
     width:20%;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #07dfb4;
+    background-color: #BB1010FF;
     text-align:center;
-    color: white;
+    color: black;
     }
 
     .limpafloat{
@@ -113,7 +104,7 @@
     margin: 0 0;
     } */
 
-    /* header{
+     header{
         width: 100%;
-    } */
+    } 
 </style>
