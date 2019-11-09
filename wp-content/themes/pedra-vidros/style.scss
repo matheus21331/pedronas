@@ -19,17 +19,6 @@ $md:   "max-width: 1199px";
 $sm:   "max-width: 991px";
 $xs:   "max-width: 767px";
 
-$opacity: 0.75;
 
-.opacity {
-	-webkit-opacity: $opacity;
-	-moz-opacity: $opacity;
-	opacity: $opacity;
-}
-a:hover {
-	@extend .opacity;
-}
-body{
-    background-color: black;
-}
+
 
