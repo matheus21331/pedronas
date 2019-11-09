@@ -2,7 +2,6 @@
 <html>
 <head>
     <title><?php wp_title(); ?></title>
-    
     <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri() ?>/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri() ?>/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri() ?>/favicon/apple-icon-72x72.png">
@@ -33,91 +32,88 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="wrap">
-    <div class="backgroundHeader">
+<div class="backgroundHeader">
     <div class="container-fluid">
-<header>
-    <a href="index.php" >
-        <div  id="logo" class = "barraHeader">
-            <img src="wp-content\themes\pedra-vidros\images\logo-png.png" id ="imglogo">
-        </div>
-    </a>
-    <a href="index.php">
-        <div  id="Inicio" class = "barraHeader">
-           Inicio
-        </div>
-    </a>
-    <a>
-    <div class = "barraHeader" id = "Sobre" >"Sobre"
-      
+        <header>
+            <a href="index.php" >
+                <div  id="logo" class = "barraHeader">
+                    <img src="wp-content\themes\pedra-vidros\images\logo-png.png" id ="imglogo">
+                </div>
+            </a>
+            <a href="index.php">
+                <div  id="Inicio" class = "barraHeader">
+                    Inicio
+                </div>
+            </a>
+            <a href="#">
+            <div class = "barraHeader" id = "Sobre" >
+                Sobre
+            </div>
+            </a>
+            <a href="agendar.php">
+                <div class = "barraHeader" id="Servicos">
+                Servicos
+                </div>
+            </a>
+            <a href="#">
+                <div class = "barraHeader" id="Contato">
+                    Contato
+                </div>
+            </a>
+        </header>
     </div>
-    </a>
-        <a href="agendar.php">
-        <div class = "barraHeader" id="Servicos">
-        Servicos
-        </div>
-        </a>
-
-        <a >
-    <div class = "barraHeader" id="Contato">
-        Contato
-     </div>
-     </a>
-    
-</header>
 </div>
-
-</div>
-    <div class="content-wrapper">
+  
 
     
-      <style>
-div{
-    width: 100%;
-}
+<style>
+    div{
+        width: 100%;
+    }
 
-#imglogo{
-    width:80px;
-}
-.backgroundHeader{
-    background-color:black;
-}
-#Inicio{
-  width:20%;
-  position: relative;
-  float:left;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #07dfb4;
-  text-align:center;
-}
+    #imglogo{
+        width:80px;
+    }
+    .backgroundHeader{
+        background-color:black;
+    }
+    #Inicio{
+    width:20%;
+    position: relative;
+    float:left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #07dfb4;
+    text-align:center;
+    }
 
-a{
-    color: inherit;
-    text-decoration: none;
-}
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
 
-.barraHeader {
-  position: relative;
-  display: inline-block;
-  float:left;
-  width:20%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #07dfb4;
-  text-align:center;
-  color: white;
-}
+    .barraHeader {
+    position: relative;
+    display: inline-block;
+    float:left;
+    width:20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #07dfb4;
+    text-align:center;
+    color: white;
+    }
 
-.limpafloat{
-    clear:both;
-}
+    .limpafloat{
+        clear:both;
+    }
 
-body {
-padding: 0 0;
-margin: 0 0;
-}
+    /* body {
+    padding: 0 0;
+    margin: 0 0;
+    } */
 
-header{
-    width: 100%;
-}
-      </style>
+    /* header{
+        width: 100%;
+    } */
+</style>
