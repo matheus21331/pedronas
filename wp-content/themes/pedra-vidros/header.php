@@ -32,34 +32,46 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="wrap">
-    <div class="container-fluid">
-        <header>
-            <a href="index.php" >
-                <div  id="logo" class = "barraHeader">
-                    <img src="wp-content\themes\pedra-vidros\images\logo-png.png" id ="imglogo">
-                </div>
-            </a>
-            <a href="index.php">
-                <div  id="Inicio" class = "barraHeader">
-                    Inicio
-                </div>
-            </a>
-            <a href="#">
-            <div class = "barraHeader" id = "Sobre" >
-                Sobre
+<div class="container-fluid">
+    <header>
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <a href="index.php" >
+                    <div  id="logo" class = "barraHeader">
+                        <img class="img-fluid" src="wp-content\themes\pedra-vidros\images\logo-png.png" id ="imglogo">
+                    </div>
+                </a>
             </div>
-            </a>
-            <a href="agendar.php">
-                <div class = "barraHeader" id="Servicos">
-                Servicos
-                </div>
-            </a>
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <a href="index.php">
+                    <div  id="Inicio" class = "barraHeader">
+                        Inicio
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
             <a href="#">
-                <div class = "barraHeader" id="Contato">
-                    Contato
+                <div class = "barraHeader" id = "Sobre" >
+                    Sobre
                 </div>
             </a>
-        </header>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <a href="agendar.php">
+                    <div class = "barraHeader" id="Servicos">
+                        Servicos
+                    </div>
+                </a>
+            </div>  
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <a href="#">
+                    <div class = "barraHeader" id="Contato">
+                        Contato
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
 </div>
   
 
@@ -68,13 +80,9 @@
     div{
         width: 100%;
     }
-
-    #imglogo{
-        height:10px;
-        width:80px;
+    .barraHeader .img-fluid {
+        width: 32%;
     }
-    
-
     .container-fluid{
         padding:0;
     }
@@ -84,15 +92,9 @@
     }
 
     .barraHeader {
-    position: relative;
-    display: inline-block;
-    float:left;
-    width:20%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #BB1010FF;
-    text-align:center;
-    color: black;
+       display: flex;
+       justify-content: center;
+       align-items: center;
     }
 
     .limpafloat{
@@ -106,5 +108,6 @@
 
      header{
         width: 100%;
+        background-color: #BB1010FF;
     } 
 </style>
