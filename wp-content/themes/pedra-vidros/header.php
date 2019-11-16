@@ -91,23 +91,15 @@
         color: inherit;
         text-decoration: none;
     }
-
     .barraHeader {
        display: flex;
        justify-content: center;
        align-items: center;
     }
-
     .limpafloat{
         clear:both;
     }
-
-    /* body {
-    padding: 0 0;
-    margin: 0 0;
-    } */
-
-     header{
+    header{
         width: 100%;
         background-color: #BB1010FF;
     } 
