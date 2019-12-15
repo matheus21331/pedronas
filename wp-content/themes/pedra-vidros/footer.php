@@ -70,10 +70,23 @@
         font-size:30px;
         margin-left:10px;
     }
-
-    .carousel{
-        background-image:url("wp-content\themes\pedra-vidros\images\IMG-20190626-WA0047.jpg")
+    
+    #img1,#img2{
+        margin:10px 5px 10px 5px;
     }
 
-    
+    #img1{
+            background-image:url("wp-content/themes/pedra-vidros/images/IMG-20190626-WA0047.jpg");
+            height:400px;
+            background-size:100%  100%;
+            background-repeat:no-repeat;
+    }
+    #img2{
+            background-image:url("wp-content/themes/pedra-vidros/images/FB_IMG_1554856123912.jpg");
+            height:400px;
+            background-size:100% 100%;
+            background-repeat:no-repeat;
+
+        }
+        
 </style>

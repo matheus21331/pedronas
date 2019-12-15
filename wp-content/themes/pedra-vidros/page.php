@@ -12,12 +12,13 @@
 <script>
     (function($) {
         $('.carousel').slick({
+            adaptiveHeight: true,
             dots: false,
             infinite: true,
             autoplay:true,
             arrows:false,
             speed: 300,
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
         });
         console.log("aaaaaaaaaa");
