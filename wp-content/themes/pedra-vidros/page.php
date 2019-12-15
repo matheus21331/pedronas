@@ -1,10 +1,16 @@
 <?php get_header(); ?>
 <main class="front-page">
+<?php if( have_rows('galeria_de_fotos') ): ?>
+
 <div class="carousel">
-  <div id = "img1"></div>
-  <div id = "img2"></div>
- 
+<?php 
+    while( have_rows('galeria_de_fotos') ): the_row(); 
+    $imagesHome = get_sub_field('imagem_home');
+?>
+  <div class="img-carousel" style="background-image: url('<?php echo $imagesHome['url' ]?>')"></div>
+<?php endwhile;?>
 </div>
+<?php endif; ?>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
