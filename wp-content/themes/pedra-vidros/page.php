@@ -1,7 +1,34 @@
 <?php get_header(); ?>
 <main class="front-page">
-    AQUI É A PAGINA INICIAL
+<div class="carousel">
+  <div id = "img1"></div>
+  <div id = "img2"></div>
+ 
+</div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="wp-content\themes\pedra-vidros\slick-1.8.1\slick-1.8.1\slick\slick.min.js"></script>
+<script>
+    (function($) {
+        $('.carousel').slick({
+            dots: false,
+            infinite: true,
+            autoplay:true,
+            arrows:false,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+        console.log("aaaaaaaaaa");
+    })(jQuery);
+</script>
+    
 </main>
+
+
+
+
 <?php
     $args = array(
         'post_type'      => 'page',
@@ -25,4 +52,6 @@
 
     wp_reset_postdata();
 ?>
+
 <?php get_footer(); ?>
+
