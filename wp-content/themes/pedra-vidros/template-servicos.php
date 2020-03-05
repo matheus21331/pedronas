@@ -12,7 +12,7 @@
             </div>
             <div class="col-md-6 image">
             <img class="img-fluid image-right" alt="Responsive image" src = "wp-content\themes\pedra-vidros\images\Cozinha.jpg">
-                        <div onclick = "colFun()" class="middle">
+                        <div onclick = "colFunc()" class="middle">
                 <div class="text">Colecoes</div>
             </div>
             </div>
@@ -20,11 +20,12 @@
 
  </div>
 <script>
-function colFun(){
-    window.alert("ba");
-}
-
-
+    function colFunc(){
+        window.alert("ba");
+    }
+    function ambFunc(){
+        window.alert("ba");
+    }
 </script>
 <style>
 .image-left {
