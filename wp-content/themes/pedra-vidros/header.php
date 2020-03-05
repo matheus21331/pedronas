@@ -85,6 +85,9 @@
 
     
 <style>
+    .d-flex:hover{
+        background-color: #BB1010bb;
+    }
     div{
         width: 100%;
     }
@@ -110,6 +113,6 @@
         color:white;
         font-size:22px;
         width: 100%;
-        background-color: #BB1010FF;
+        background-color: #BB1010aa;
     } 
 </style>

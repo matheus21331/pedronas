@@ -4,45 +4,78 @@
 
 <div class="fundo row">
 
-        <div class=" col-xs-1 image" >
-            <img class="img-fluid" alt="Responsive image" src = "wp-content\themes\pedra-vidros\images\ambientes.jpg">
-            
+        <div class="col-md-6 image">
+            <img  class="img-fluid image-left" alt="Responsive image" src = "wp-content\themes\pedra-vidros\images\ambientes.jpg">
+            <div onclick = "ambFunc()"class="middle">
+                <div class="text">Ambientes</div>
             </div>
-        <div class="col-xs-6 listinha">
-            <ul class="list-nav">
-        <li><i class="fa fa-check"></i><a href=#>Cozinhas </a></li>
-        <li><i class="fa fa-check"></i><a href=#>Área Gourmet e Churrasqueiras</a></li>
-        <li><i class="fa fa-check"></i><a href=#>>Banheiros e Lavabos</a></li>
-        <li><i class="fa fa-check"></i> <a href=#>Corporativos</a></li>
-        <li><i class="fa fa-check"></i> <a href=#>Salas</a></li>
-        <li><i class="fa fa-check"></i> <a href=#>Artes Sacras</a></li>
-        <li><i class="fa fa-check"></i> <a href=#>Lareiras</a></li>
-        <li><i class="fa fa-check"></i> <a href=#>Porcelanatos </a></li>
-            </ul>
-        </div>
-        </div>
+            </div>
+            <div class="col-md-6 image">
+            <img class="img-fluid image-right" alt="Responsive image" src = "wp-content\themes\pedra-vidros\images\Cozinha.jpg">
+                        <div onclick = "colFun()" class="middle">
+                <div class="text">Colecoes</div>
+            </div>
+            </div>
+        
 
+ </div>
+<script>
+function colFun(){
+    window.alert("ba");
+}
+
+
+</script>
 <style>
-.fundo{
-display:block;
- text-align:center;
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-
-   
-    
+.image-left {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
-img{
-    opacity:100%;
-    transition: all .6s ease; /* delays for 1 second */
-
-
+.image-right {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
-img:hover{
-    transition: all .6s ease; /* delays for 1 second */
-    opacity:60%;
-   
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
 }
+.text {
+  width:50%;
+  text-align:center;
+  background-color: red;
+  color: white;
+  font-size: 35px;
+  padding: 16px 32px;
+}
+
+.image:hover .image-left {
+  opacity: 0.3;
+}
+.image:hover .image-right {
+  opacity: 0.3;
+}
+.image:hover .middle {
+  opacity: 1;
+}
+.image{
+    text-align:center;
+    position: relative;
+  width: 50%;
+}
+
 
 </style>
 
