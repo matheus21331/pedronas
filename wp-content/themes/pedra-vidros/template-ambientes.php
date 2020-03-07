@@ -25,8 +25,8 @@ $postDest = new WP_Query( $args ); ?>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-<?php the_ID();?>">
                         Open modal
                         </button>  
-                </div>
-                
+                    </div>
+                </div>    
             </div>
             <?php if( have_rows('galeria_ambientes') ):  ?>
                 <div class="modal fade" id="myModal-<?php the_ID()?>" role="dialog">
@@ -39,13 +39,12 @@ $postDest = new WP_Query( $args ); ?>
                                 <?php while( have_rows('galeria_ambientes') ): the_row();
                                     $imageIn = get_sub_field('imagem_ambientes_inside');
                                 ?>
-                                    <div>
-                                        <img src="<?php echo $imageIn['url']?>" alt="">
-                                    </div>
+                                <div>
+                                    <img src="<?php echo $imageIn['url']?>" alt="">
+                                </div>
                                 <?php endwhile;?>
                             </div>
                                 
-                            </div>
                         </div>
                     </div>
                 </div>
