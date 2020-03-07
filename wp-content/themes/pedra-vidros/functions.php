@@ -368,5 +368,38 @@ function admin_bar(){
 
 /* `Add more functions
 ----------------------------------------------------------------------------------------------------*/
-
+// Our custom post type function
+function create_posttype() {
+ 
+    register_post_type( 'ambientes',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Ambientes' ),
+                'singular_name' => __( 'Ambiente' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'ambientes'),
+            'show_in_rest' => true,
+ 
+        )
+	);
+	register_post_type( 'colecoes',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Coleções' ),
+                'singular_name' => __( 'Coleção' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'colecoes'),
+            'show_in_rest' => true,
+ 
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
 ?>
