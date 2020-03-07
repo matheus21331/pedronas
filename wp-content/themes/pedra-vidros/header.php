@@ -30,7 +30,7 @@
     <meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>"/>
     <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen"/>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     
     <!--[if lt IE 9]>
     <script src="<?php bloginfo('template_url'); ?>/js/html5shiv.js"></script>
@@ -46,7 +46,7 @@
             <div class="col-md-3 d-flex justify-content-center align-items-center">
                 <a href="index.php" >
                     <div  id="logo" class = "barraHeader">
-                        <img class="img-fluid" src="wp-content\themes\pedra-vidros\images\logo-png.png" id ="imglogo">
+                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/logo-png.png" id ="imglogo">
                     </div>
                 </a>
             </div>
