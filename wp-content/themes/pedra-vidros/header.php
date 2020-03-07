@@ -113,6 +113,6 @@
         color:white;
         font-size:22px;
         width: 100%;
-        background-color: #BB1010aa;
+        background-color: #222;
     } 
 </style>

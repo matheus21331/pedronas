@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <div class="container">
     <div class="row">
         <div id="content" class="col-md-9">

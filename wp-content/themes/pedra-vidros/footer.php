@@ -49,7 +49,7 @@
     .main-footer{
         width:100%;
         color:white;
-        background-color: #BB1010FF;
+        background-color: #222;
     }
     a:hover {
         text-decoration: none;
