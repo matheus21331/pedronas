@@ -12,9 +12,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri() ?>/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_template_directory_uri() ?>/favicon/apple-icon-152x152.png">
     
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     
-    <link rel="stylesheet" href="wp-content\themes\pedra-vidros\slick-1.8.1\slick-1.8.1\slick\slick.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/favicon/apple-icon-180x180.png">
@@ -30,8 +28,9 @@
     <meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>"/>
     <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen"/>
-    
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick-1.8.1/slick-1.8.1/slick/slick.css">
     <!--[if lt IE 9]>
     <script src="<?php bloginfo('template_url'); ?>/js/html5shiv.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/respond.min.js"></script>
@@ -46,7 +45,7 @@
             <div class="col-md-3 d-flex justify-content-center align-items-center">
                 <a href="index.php" >
                     <div  id="logo" class = "barraHeader">
-                        <img class="img-fluid" src="wp-content\themes\pedra-vidros\images\logo-png.png" id ="imglogo">
+                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/logo-png.png" id ="imglogo">
                     </div>
                 </a>
             </div>

@@ -369,37 +369,84 @@ function admin_bar(){
 /* `Add more functions
 ----------------------------------------------------------------------------------------------------*/
 // Our custom post type function
-function create_posttype() {
- 
-    register_post_type( 'ambientes',
-    // CPT Options
-        array(
-            'labels' => array(
-                'name' => __( 'Ambientes' ),
-                'singular_name' => __( 'Ambiente' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'ambientes'),
-            'show_in_rest' => true,
- 
-        )
-	);
-	register_post_type( 'colecoes',
-    // CPT Options
-        array(
-            'labels' => array(
-                'name' => __( 'Coleções' ),
-                'singular_name' => __( 'Coleção' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'colecoes'),
-            'show_in_rest' => true,
- 
-        )
+
+function register_custom_post_types() {
+
+    /**
+     * Post Type: Baterias
+     */
+    $labels = array(
+        "name"                => __( 'Ambientes', '' ),
+        'singular_name'       => __( 'Ambiente', '' ),
+        'all_items'           => __( 'Todos os Ambientes', '' ),
+        'add_new'             => __( 'Adicionar Ambiente', '' ),
+        'add_new_item'        => __( 'Adicionar Ambiente', '' ),
     );
+    $rewrite = array(
+        'slug'                => 'ambiente',
+        'with_front'          => true
+    );
+    $args = array(
+        'label'               => __( 'Ambiente', '' ),
+        'labels'              => $labels,
+        'description'         => '',
+        'public'              => true,
+        'publicly_queryable'  => true,
+        'show_ui'             => true,
+        'show_in_rest'        => false,
+        'rest_base'           => '',
+        'show_in_menu'        => true,
+        'exclude_from_search' => false,
+        'capability_type'     => 'post',
+        'map_meta_cap'        => true,
+        'hierarchical'        => false,
+        'rewrite'             => $rewrite,
+        'query_var'           => true,
+        'menu_icon'           => 'dashicons-archive',
+        'supports'            => array( 'title', 'editor','thumbnail' ),
+    );
+    register_post_type( 'ambientes', $args );
+
+    flush_rewrite_rules();
+
+
+    /**
+     * Post Type: Perguntas Frequentes
+     */
+    $labels = array(
+        "name"                => __( 'Coleções', '' ),
+        'singular_name'       => __( 'Coleção', '' ),
+        'all_items'           => __( 'Todos as Coleções', '' ),
+        'add_new'             => __( 'Adicionar Coleção', '' ),
+        'add_new_item'        => __( 'Adicionar Pergunta Frequente', '' ),
+    );
+    $rewrite = array(
+        'slug'                => 'pergunta-frequente',
+        'with_front'          => true
+    );
+    $args = array(
+        'label'               => __( 'Pergunta Frequente', '' ),
+        'labels'              => $labels,
+        'description'         => '',
+        'public'              => true,
+        'publicly_queryable'  => true,
+        'show_ui'             => true,
+        'show_in_rest'        => false,
+        'rest_base'           => '',
+        'show_in_menu'        => true,
+        'exclude_from_search' => false,
+        'capability_type'     => 'post',
+        'map_meta_cap'        => true,
+        'hierarchical'        => false,
+        'rewrite'             => $rewrite,
+        'query_var'           => true,
+        'menu_icon'           => 'dashicons-format-status',
+        'supports'            => array( 'title', 'editor' ),
+    );
+    register_post_type( 'perguntas-frequentes', $args );
+
+    flush_rewrite_rules();
+
+    
 }
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
-?>
+add_action( 'init', 'register_custom_post_types' );

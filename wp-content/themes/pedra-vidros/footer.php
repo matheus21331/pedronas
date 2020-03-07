@@ -29,6 +29,16 @@
     </div>
 </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+<script>
+    (function($) {
+        $('.modal-slider-start').slick();
+    })(jQuery);
+</script>
 <?php wp_footer(); ?>
 
 </body>
