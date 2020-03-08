@@ -14,8 +14,8 @@
         </div>
         <div class="box-title">
             <i class="fas fa-phone" id="icone"></i>
-            <a href="tel:518586-5208" class="h6 text-right"id="phone">
-            (51) 8586-5208
+            <a href="tel:5198586-5208" class="h6 text-right"id="phone">
+            (51) 98586-5208
             </a>
         </div>
         <div class="box-title">

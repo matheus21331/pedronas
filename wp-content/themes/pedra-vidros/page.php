@@ -3,6 +3,12 @@
 
     
 </main>
+<div class="divPai">
+
+    <div class="justify-content-center btn btnZap">
+        Entrar em contato via WhatsApp
+    </div>
+</div>
     <div class="container">
     <div class="row">
         <div class="col-md-6 image">
@@ -16,7 +22,7 @@
             </div>
         </div>
     </div>  
-</div>
+
 <section class="about">
     <div class = "container">
         <?php if( have_rows('text_gallery') ): ?>
@@ -50,6 +56,15 @@
 
 <?php get_footer(); ?>
 <style>
+  #imglogo{
+    width:20%;
+  }
+    .divPai{
+        text-align:center;
+    }
+    .d-flex{
+        font-family: 'Roboto', sans-serif;
+    }
 .about {
     margin: 60px 0;
 }
@@ -116,4 +131,20 @@
     position: relative;
     width: 50%;
 }
+#logo{
+
+
+}
+.btnZap{
+    background-color:white;
+    color:#222;
+    margin:20px;
+    border:1px solid #222;
+}
+.btnZap:hover{
+    background-color:#222;
+    color:white;
+
+}
+
 </style>

@@ -38,80 +38,67 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div id="wrap">
-<div class="container-fluid">
+
     <header>
-        <div class="row">
-            <div class="col-md-3 d-flex justify-content-center align-items-center">
-                <a href="index.php" >
-                    <div  id="logo" class = "barraHeader">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/logo-png.png" id ="imglogo">
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2 d-flex justify-content-center align-items-center">
-                <a href="index.php">
-                    <div  id="Inicio" class = "barraHeader">
-                        Inicio
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2 d-flex justify-content-center align-items-center">
-            <a href="#">
-                <div class = "barraHeader" id = "Sobre" >
-                    Sobre
-                </div>
-            </a>
-            </div>
-            <div class="col-md-2 d-flex justify-content-center align-items-center">
-                <a href="#">
-                    <div class = "barraHeader" id="Servicos">
-                        Servicos
-                    </div>
-                </a>
-            </div>  
-            <div class="col-md-2 d-flex justify-content-center align-items-center">
-                <a href="#">
-                    <div class = "barraHeader" id="Contato">
-                        Contato
-                    </div>
-                </a>
-            </div>
-        </div>
-    </header>
+    <!--Navbar-->
+<nav class="navbar navbar-light light-blue lighten-4">
+
+<!-- Navbar brand -->
+<a class="navbar-brand" href="#"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/logo-png.png" id ="imgmenu"></a>
+
+<!-- Collapse button -->
+<button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+  aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-dark-text"><i
+      class="fas fa-bars fa-1x"></i></span></button>
+
+<!-- Collapsible content -->
+<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+  <!-- Links -->
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Inicio </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Empresa</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Ambientes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Materiais</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contato</a>
+    </li>
+  </ul>
+  <!-- Links -->
+
 </div>
+<!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+    </header>
+
   
 
     
 <style>
-    .d-flex:hover{
-        background-color: #BB1010bb;
+    #imgmenu{
+        width:10%;
     }
-    div{
-        width: 100%;
-    }
-    .barraHeader .img-fluid {
-        width: 32%;
-    }
-    .container-fluid{
-        padding:0;
-    }
-    a{
-        color: inherit;
-        text-decoration: none;
-    }
-    .barraHeader {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-    }
-    .limpafloat{
-        clear:both;
-    }
-    header{
-        color:white;
-        font-size:22px;
-        width: 100%;
-        background-color: #222;
-    } 
+  /* nav{
+      box-shadow:5px 5px 5px grey;
+  } */
+  
+  
+.navbar-toggler.toggler-example {
+cursor: pointer;
+}
+
+.dark-dark-text {
+color: #222;
+}
+
 </style>
