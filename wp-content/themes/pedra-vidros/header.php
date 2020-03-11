@@ -47,7 +47,7 @@
 <div class="divzona d-flex">
   <div class="divbrand">
     <a class="navbar-brand">
-      <img  id = "imgmenu" src = "wp-content\themes\pedra-vidros\images\logo-png.png"> 
+      <img  id = "imgmenu" src ="<?php echo get_template_directory_uri(); ?>/images/logo-png.png"> 
       </img>
     </a>
   </div>
@@ -99,26 +99,29 @@ nav{
   background-color:#222;
   
 }
+.divzona{
+  width:100%;
+}
 .divbrand{
   display:flex;
   justify-content:center;
-  width:90%;
+  width:100%;
 }
 .divbutton{
-  width:10%;
+  width:0%;
   display: flex;
   justify-content: flex-end;
 }
 #imgmenu{
   text-align:center;
-  border: 1px solid red;
-    width:5%;
+
+    width:80px;
 }
   /* nav{
       box-shadow:5px 5px 5px grey;
   } */
 .navbar-brand{
-  border: 1px solid red;
+
   text-align: center;
 }
   

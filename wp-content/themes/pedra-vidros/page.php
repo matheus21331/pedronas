@@ -25,29 +25,35 @@
 
 <section class="about">
     <div class = "container">
-        <?php if( have_rows('text_gallery') ): ?>
+    
 
             <div class = "row">
 
-            <?php while( have_rows('text_gallery') ): the_row(); 
-
-                // vars
-                $image = get_sub_field('imagem_home');
-                $content = get_sub_field('texto_home');
-                ?>
-
+            
                 <div class = "col-md-4  icones">
                     <div class="bx-sh shadow-sm rounded">
                         <i class="fa fa-building  fa-4x" aria-hidden="true"></i>
-                        <p><?php echo $content?></p>
+                        <p>Trabalhamos com materiais da melhor qualidade, mantendo um alto padrão.</p>
                     </div>
                 
                 </div>
-            <?php endwhile; ?>
-
+                <div class = "col-md-4  icones">
+                    <div class="bx-sh shadow-sm rounded">
+                        <i class="fa fa-graduation-cap  fa-4x" aria-hidden="true"></i>
+                        <p>Profissionais com mais de 20 anos de experiência!</p>
+                    </div>
+                
+                </div>
+                <div class = "col-md-4  icones">
+                    <div class="bx-sh shadow-sm rounded">
+                        <i class="fa fa-users  fa-4x" aria-hidden="true"></i>
+                        <p>Somos uma empresa familiar, conceituada e bem estabelecida no ramo.</p>
+                    </div>
+                
+                </div>
             </div>
 
-            <?php endif; ?>
+          
             
         </div>
     </div>
