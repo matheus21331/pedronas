@@ -102,10 +102,10 @@ nav{
 .divbrand{
   display:flex;
   justify-content:center;
-  width:80%;
+  width:90%;
 }
 .divbutton{
-  width:20%;
+  width:10%;
   display: flex;
   justify-content: flex-end;
 }
