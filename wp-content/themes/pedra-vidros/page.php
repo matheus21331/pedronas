@@ -51,11 +51,60 @@
             
         </div>
     </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href=<?php
+// Fix Api Whatsapp on Desktops
+// Dev: Jean Livino
+// insert the text and message
+$phone = 'YOURNUMBER';
+$message = 'YOURTEXT';
+// DO NOT EDIT BELOW
+$message = urlencode($message);
+$message = str_replace('+','%20',$message);
+$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+$palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
+$berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
+// check if is a mobile
+if ($iphone || $android || $palmpre || $ipod || $berry == true)
+{
+header('Location: whatsapp://send?phone='.$phone.'&text='.$message);
+//OR
+echo "<script>window.location='whatsapp://send?phone='.$phone.'&text='.$message</script>";
+}
+// all others
+else {
+header('Location: https://web.whatsapp.com/send?phone='.$phone.'&text='.$message);
+//OR
+echo "<script>window.location='https://web.whatsapp.com/send?phone='.$phone.'&text='.$message</script>";
+}
+?> class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
 </section>
 
 
 <?php get_footer(); ?>
 <style>
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
   #imglogo{
     width:20%;
   }

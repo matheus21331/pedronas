@@ -41,15 +41,28 @@
 
     <header>
     <!--Navbar-->
-<nav class="navbar navbar-light light-blue lighten-4">
+<nav class="navbar navbar-light light-blue lighten-4 ">
 
 <!-- Navbar brand -->
-<a class="navbar-brand" href="#"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/logo-png.png" id ="imgmenu"></a>
+<div class="divzona d-flex">
+  <div class="divbrand">
+    <a class="navbar-brand">
+      <img  id = "imgmenu" src = "wp-content\themes\pedra-vidros\images\logo-png.png"> 
+      </img>
+    </a>
+  </div>
+  <div class="divbutton">
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+      aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-dark-text"><i
+          class="fas fa-bars fa-1x"></i></span></button>
+  </div>
 
-<!-- Collapse button -->
-<button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-  aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-dark-text"><i
-      class="fas fa-bars fa-1x"></i></span></button>
+
+  <!-- Collapse button -->
+  
+
+</div>
+
 
 <!-- Collapsible content -->
 <div class="collapse navbar-collapse" id="navbarSupportedContent1">
@@ -85,13 +98,30 @@
 
     
 <style>
+
+nav{
+  background-color:#222;
+  
+}
+.divbrand{
+  display:flex;
+  justify-content:center;
+  width:80%;
+}
+.divbutton{
+  width:20%;
+}
     #imgmenu{
-        width:10%;
+      text-align:center;
+      border: 1px solid red;
+        width:5%;
     }
   /* nav{
       box-shadow:5px 5px 5px grey;
   } */
-  
+  .navbar-brand{
+    border: 1px solid red;
+  }
   
 .navbar-toggler.toggler-example {
 cursor: pointer;
@@ -99,6 +129,10 @@ cursor: pointer;
 
 .dark-dark-text {
 color: #222;
+}
+
+.fa-bars{
+  color:white;
 }
 
 </style>
