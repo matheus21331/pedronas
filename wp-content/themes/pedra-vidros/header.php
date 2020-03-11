@@ -54,17 +54,13 @@
   <div class="divbutton">
     <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
       aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-dark-text"><i
-          class="fas fa-bars fa-1x"></i></span></button>
+          class="fas fa-bars fa-1x"></i></span>
+    </button>
   </div>
-
-
-  <!-- Collapse button -->
-  
 
 </div>
 
 
-<!-- Collapsible content -->
 <div class="collapse navbar-collapse" id="navbarSupportedContent1">
 
   <!-- Links -->
@@ -110,18 +106,21 @@ nav{
 }
 .divbutton{
   width:20%;
+  display: flex;
+  justify-content: flex-end;
 }
-    #imgmenu{
-      text-align:center;
-      border: 1px solid red;
-        width:5%;
-    }
+#imgmenu{
+  text-align:center;
+  border: 1px solid red;
+    width:5%;
+}
   /* nav{
       box-shadow:5px 5px 5px grey;
   } */
-  .navbar-brand{
-    border: 1px solid red;
-  }
+.navbar-brand{
+  border: 1px solid red;
+  text-align: center;
+}
   
 .navbar-toggler.toggler-example {
 cursor: pointer;
