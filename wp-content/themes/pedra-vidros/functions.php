@@ -414,18 +414,18 @@ function register_custom_post_types() {
      * Post Type: Perguntas Frequentes
      */
     $labels = array(
-        "name"                => __( 'Coleções', '' ),
-        'singular_name'       => __( 'Coleção', '' ),
-        'all_items'           => __( 'Todos as Coleções', '' ),
-        'add_new'             => __( 'Adicionar Coleção', '' ),
-        'add_new_item'        => __( 'Adicionar Pergunta Frequente', '' ),
+        "name"                => __( 'Materiais', '' ),
+        'singular_name'       => __( 'Material', '' ),
+        'all_items'           => __( 'Todos os Materiais', '' ),
+        'add_new'             => __( 'Adicionar Material', '' ),
+        'add_new_item'        => __( 'Adicionar Material', '' ),
     );
     $rewrite = array(
-        'slug'                => 'pergunta-frequente',
+        'slug'                => 'materiais',
         'with_front'          => true
     );
     $args = array(
-        'label'               => __( 'Pergunta Frequente', '' ),
+        'label'               => __( 'Materiais', '' ),
         'labels'              => $labels,
         'description'         => '',
         'public'              => true,
@@ -441,9 +441,9 @@ function register_custom_post_types() {
         'rewrite'             => $rewrite,
         'query_var'           => true,
         'menu_icon'           => 'dashicons-format-status',
-        'supports'            => array( 'title', 'editor' ),
+        'supports'            => array( 'title', 'editor', 'thumbnail' ),
     );
-    register_post_type( 'perguntas-frequentes', $args );
+    register_post_type( 'materials', $args );
 
     flush_rewrite_rules();
 

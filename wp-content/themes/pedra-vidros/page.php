@@ -13,12 +13,12 @@
     <div class="row">
         <div class="col-md-6 image">
             <div  class="bg-service" alt="Responsive image" style ="background-image: url('wp-content/themes/pedra-vidros/images/ambientes.jpg')">
-                <a href="ambientes" class="text">Ambientes</a>
+                <a href="<?php echo home_url().'/ambientes'?>" class="text">Ambientes</a>
             </div>
         </div>
         <div class="col-md-6 image">
             <div  class="bg-service" alt="Responsive image" style ="background-image: url('wp-content/themes/pedra-vidros/images/cozinha.jpg')">
-                <a href="#" class="text">Coleções</a>
+                <a href="<?php echo home_url().'/materiais'?>" class="text">Materiais</a>
             </div>
         </div>
     </div>  
@@ -74,7 +74,7 @@
     echo ("<script>window.location='whatsapp://send?phone='.$phone.'&text='.$message</script>");
     }
     else {
-    // echo("https://web.whatsapp.com/send?phone='.$phone.'&text='.$message");
+    echo("https://web.whatsapp.com/send?phone='.$phone.'&text='.$message");
     echo( "<script>window.location='https://web.whatsapp.com/send?phone='.$phone.'&text='.$message </script>");
     }
     ?>" class="float" target="_blank">
@@ -84,114 +84,3 @@
 
 
 <?php get_footer(); ?>
-<style>
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
-
-.my-float{
-	margin-top:16px;
-}
-  #imglogo{
-    width:20%;
-  }
-    .divPai{
-        text-align:center;
-    }
-    .d-flex{
-        font-family: 'Roboto', sans-serif;
-    }
-.about {
-    margin: 60px 0;
-}
-.bx-sh {
-    padding: 20px
-}
-.icones{
-    text-align:center;
-
-}
-.bg-service {
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.image-left {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-.image-right {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-}
-.text {
-    width:50%;
-    text-align:center;
-    background-color: #222;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-}
-
-.image:hover .image-left {
-    opacity: 0.3;
-}
-.image:hover .image-right {
-    opacity: 0.3;
-}
-.image:hover .middle {
-    opacity: 1;
-}
-.image{
-    text-align:center;
-    position: relative;
-    width: 50%;
-}
-#logo{
-
-
-}
-.btnZap{
-    background-color:white;
-    color:#222;
-    margin:20px;
-    border:1px solid #222;
-}
-.btnZap:hover{
-    background-color:#222;
-    color:white;
-
-}
-
-</style>

@@ -29,9 +29,10 @@
     <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick-1.8.1/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/main.css">
+
     <!--[if lt IE 9]>
     <script src="<?php bloginfo('template_url'); ?>/js/html5shiv.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/respond.min.js"></script>
@@ -44,7 +45,7 @@
     <nav class="navbar navbar-light light-blue lighten-4 ">
         <div class="divzona d-flex">
             <div class="divbrand">
-                <a class="navbar-brand">
+                <a class="navbar-brand" href="<?php echo home_url()?>">
                     <img  id = "imgmenu" src ="<?php echo get_template_directory_uri(); ?>/images/logo-png.png"> 
                     </img>
                 </a>
@@ -59,16 +60,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent1">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio </a>
+                    <a class="nav-link" href="<?php echo home_url()?>">Inicio </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Empresa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Ambientes</a>
+                    <a class="nav-link" href="<?php echo home_url()?>/ambientes">Ambientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Materiais</a>
+                    <a class="nav-link" href="<?php echo home_url()?>/materiais">Materiais</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contato</a>
@@ -77,52 +78,3 @@
         </div>
     </nav>
 </header>
-
-  
-
-    
-<style>
-
-    nav{
-    background-color:#222;
-    
-    }
-    .divzona{
-    width:100%;
-    }
-    .divbrand{
-    display:flex;
-    justify-content:center;
-    width:100%;
-    }
-    .divbutton{
-    width:0%;
-    display: flex;
-    justify-content: flex-end;
-    }
-    #imgmenu{
-    text-align:center;
-
-        width:80px;
-    }
-    /* nav{
-        box-shadow:5px 5px 5px grey;
-    } */
-    .navbar-brand{
-
-    text-align: center;
-    }
-    
-    .navbar-toggler.toggler-example {
-    cursor: pointer;
-    }
-
-    .dark-dark-text {
-    color: #222;
-    }
-
-    .fa-bars{
-    color:white;
-    }
-
-</style>
