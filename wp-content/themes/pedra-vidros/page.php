@@ -57,37 +57,29 @@
             
         </div>
     </div>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href=<?php
-// Fix Api Whatsapp on Desktops
-// Dev: Jean Livino
-// insert the text and message
-$phone = 'YOURNUMBER';
-$message = 'YOURTEXT';
-// DO NOT EDIT BELOW
-$message = urlencode($message);
-$message = str_replace('+','%20',$message);
-$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
-$palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
-$berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
-$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
-// check if is a mobile
-if ($iphone || $android || $palmpre || $ipod || $berry == true)
-{
-header('Location: whatsapp://send?phone='.$phone.'&text='.$message);
-//OR
-echo "<script>window.location='whatsapp://send?phone='.$phone.'&text='.$message</script>";
-}
-// all others
-else {
-header('Location: https://web.whatsapp.com/send?phone='.$phone.'&text='.$message);
-//OR
-echo "<script>window.location='https://web.whatsapp.com/send?phone='.$phone.'&text='.$message</script>";
-}
-?> class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
-</a>
+    <a href="<?php
+    $phone = '55 51 8475-3390';
+    $message = 'coco';
+    // $message = urlencode($message);
+    // $message = str_replace('+','%20',$message);
+    $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+    $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+    $palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
+    $berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+    $ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
+    if ($iphone || $android || $palmpre || $ipod || $berry == true)
+    {
+    echo ('whatsapp://send?phone='.$phone.'&text='.$message);
+    
+    echo ("<script>window.location='whatsapp://send?phone='.$phone.'&text='.$message</script>");
+    }
+    else {
+    // echo("https://web.whatsapp.com/send?phone='.$phone.'&text='.$message");
+    echo( "<script>window.location='https://web.whatsapp.com/send?phone='.$phone.'&text='.$message </script>");
+    }
+    ?>" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
 </section>
 
 

@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!--[if lt IE 9]>
     <script src="<?php bloginfo('template_url'); ?>/js/html5shiv.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/respond.min.js"></script>
@@ -39,102 +40,89 @@
 </head>
 <body <?php body_class(); ?>>
 
-    <header>
-    <!--Navbar-->
-<nav class="navbar navbar-light light-blue lighten-4 ">
-
-<!-- Navbar brand -->
-<div class="divzona d-flex">
-  <div class="divbrand">
-    <a class="navbar-brand">
-      <img  id = "imgmenu" src ="<?php echo get_template_directory_uri(); ?>/images/logo-png.png"> 
-      </img>
-    </a>
-  </div>
-  <div class="divbutton">
-    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-      aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-dark-text"><i
-          class="fas fa-bars fa-1x"></i></span>
-    </button>
-  </div>
-
-</div>
-
-
-<div class="collapse navbar-collapse" id="navbarSupportedContent1">
-
-  <!-- Links -->
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Inicio </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Empresa</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Ambientes</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Materiais</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Contato</a>
-    </li>
-  </ul>
-  <!-- Links -->
-
-</div>
-<!-- Collapsible content -->
-
-</nav>
-<!--/.Navbar-->
-    </header>
+<header>
+    <nav class="navbar navbar-light light-blue lighten-4 ">
+        <div class="divzona d-flex">
+            <div class="divbrand">
+                <a class="navbar-brand">
+                    <img  id = "imgmenu" src ="<?php echo get_template_directory_uri(); ?>/images/logo-png.png"> 
+                    </img>
+                </a>
+            </div>
+            <div class="divbutton">
+                <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-dark-text"><i
+                    class="fas fa-bars fa-1x"></i></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Empresa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ambientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Materiais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
   
 
     
 <style>
 
-nav{
-  background-color:#222;
-  
-}
-.divzona{
-  width:100%;
-}
-.divbrand{
-  display:flex;
-  justify-content:center;
-  width:100%;
-}
-.divbutton{
-  width:0%;
-  display: flex;
-  justify-content: flex-end;
-}
-#imgmenu{
-  text-align:center;
+    nav{
+    background-color:#222;
+    
+    }
+    .divzona{
+    width:100%;
+    }
+    .divbrand{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    }
+    .divbutton{
+    width:0%;
+    display: flex;
+    justify-content: flex-end;
+    }
+    #imgmenu{
+    text-align:center;
 
-    width:80px;
-}
-  /* nav{
-      box-shadow:5px 5px 5px grey;
-  } */
-.navbar-brand{
+        width:80px;
+    }
+    /* nav{
+        box-shadow:5px 5px 5px grey;
+    } */
+    .navbar-brand{
 
-  text-align: center;
-}
-  
-.navbar-toggler.toggler-example {
-cursor: pointer;
-}
+    text-align: center;
+    }
+    
+    .navbar-toggler.toggler-example {
+    cursor: pointer;
+    }
 
-.dark-dark-text {
-color: #222;
-}
+    .dark-dark-text {
+    color: #222;
+    }
 
-.fa-bars{
-  color:white;
-}
+    .fa-bars{
+    color:white;
+    }
 
 </style>
