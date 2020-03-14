@@ -19,10 +19,14 @@ $postAmbientes = new WP_Query( $args ); ?>
             <?php if ($postAmbientes->have_posts()): while($postAmbientes->have_posts()):  $postAmbientes->the_post()?>
             <div class="col-md-4">
                 <div class="block-wrapper">
-                <a href="<?php the_permalink() ?>">
-                    <div class="thumb-image" style="background-image: url('<?php the_post_thumbnail_url() ?>')">
+                    <div class="card">
+                    <a href="<?php the_permalink() ?>">
+                        <div class="thumb-image card-img-top" style="background-image: url('<?php the_post_thumbnail_url() ?>')">
+                        </div>
+                        <div class="card-body">
                         <div class="overlay"></div>
-                        <h5 class="titulo"><?php the_title()?></h5>
+                            <h5 class="card-title"><?php the_title()?></h5>
+                        </div>
                     </div>
                     </a>
                 </div>

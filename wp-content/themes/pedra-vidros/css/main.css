@@ -62,7 +62,7 @@ nav{
 
 }
 .card-body{
-    border:1px solid red;
+
     color:white;
     background-color:#222;
 }
@@ -258,7 +258,29 @@ a:hover {
     font-size:30px;
     margin-left:10px;
 }
+.card{
+    height:200px;
+}
+.card:hover .card-img-top{
+    transition:0.2s;
+    height:279px;
+}
+.card:hover .card-body{
+    
+    visibility:hidden;
+}
+.card:hover .card-title{
+    
+    visibility:hidden;
+}
+.card-img-top{
+    transition:0.2s;
+    height:199px
+}
 .card-body{
+    
+    width:100%;
+    bottom:0;
     text-align:center;
 }
    
