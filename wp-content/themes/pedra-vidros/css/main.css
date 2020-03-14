@@ -15,6 +15,28 @@ nav{
     display: flex;
     justify-content: flex-end;
 }
+.wrap-thumb{
+    
+}
+
+.thumb-image{
+    height:200px;
+    background-size:cover;
+    background-position:center;
+}
+.card-img-top{
+   
+   size:100%;
+
+}
+.card-body{
+    border:1px solid red;
+    color:white;
+    background-color:#222;
+}
+
+
+
 #imgmenu{
     text-align:center;
     width:80px;
@@ -111,6 +133,7 @@ width:20%;
     transition: .5s ease;
     backface-visibility: hidden;
 }
+
 .middle {
     transition: .5s ease;
     opacity: 0;
@@ -203,16 +226,12 @@ a:hover {
     font-size:30px;
     margin-left:10px;
 }
-
-.img-carousel {
-    background-image:url("wp-content/themes/pedra-vidros/images/IMG-20190626-WA0047.jpg");
-    height:400px;
-    margin:10px 5px 10px 5px;
-    background-size:100%  100%;
-    background-repeat:no-repeat;
-}     
+.card-body{
+    text-align:center;
+}
+   
 .containerImg {
-
+    
     position: relative;
     width: 50%;
 }
@@ -224,6 +243,7 @@ a:hover {
 }
 
 .overlay {
+    border:1px solid red;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -231,13 +251,25 @@ a:hover {
     background-color: #222a;
     overflow: hidden;
     width: 100%;
-    height: 0;
+    height: 100%;
     transition: .5s ease;
 }
-
+.container-overlay{
+    border:1px solid red;
+    width: 100px;
+    height: 100px;
+}
 .containerImg:hover .overlay {
     height: 100%;
 }
+.thumb-image:hover .overlay {
+    height: 100%;
+  }
+  .thumb-image{
+      position:relative;
+  }
+  
+
 .wrapp-bnt-blocks {
     color: white;
     font-size: 20px;
@@ -254,12 +286,7 @@ a:hover {
     background-position: center;
     background-size: cover;
 }
-.img-block-mat {
-    height: 400px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
+
 .btn-block {
     border: 0;
     border-radius: 4px;

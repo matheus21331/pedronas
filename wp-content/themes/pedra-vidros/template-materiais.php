@@ -13,7 +13,7 @@ Template Name: Materiais
     'order' => 'DESC',
 );
 $postMateriais = new WP_Query( $args ); ?>
-<div class="container">
+<div class="container my-4">
     <div class="row">
         <?php if ($postMateriais->have_posts()): while($postMateriais->have_posts()):  $postMateriais->the_post()?>
         <div class=" col-md-4 containerImg">

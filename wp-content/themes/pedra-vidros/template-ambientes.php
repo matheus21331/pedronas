@@ -16,15 +16,14 @@ $postAmbientes = new WP_Query( $args ); ?>
 <div class="container">
     <div class="row">
         <?php if ($postAmbientes->have_posts()): while($postAmbientes->have_posts()):  $postAmbientes->the_post()?>
-        <div class=" col-md-4 containerImg">
-            <div class="img-block-mat" style="background-image: url('<?php the_post_thumbnail_url() ?>')">
+        <div class="col-md-3 my-4">
+            <div class="container-overlay">
+                <div class="thumb-image" style="background-image: url('<?php the_post_thumbnail_url() ?>')"></div>
                 <div class="overlay">
-                    <div class="wrapp-bnt-blocks"><button type="button" class="btn-block"><?php the_title() ?></button></div>
+                    <h5 class="titulo"><?php the_title()?></h5>
                 </div>
             </div>
-            
         </div>
-            
         <?php endwhile;endif;?>
     </div>
 </div>
