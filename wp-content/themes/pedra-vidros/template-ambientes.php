@@ -13,19 +13,24 @@ get_header();
     'order' => 'DESC',
 );
 $postAmbientes = new WP_Query( $args ); ?>
-<div class="container">
-    <div class="row">
-        <?php if ($postAmbientes->have_posts()): while($postAmbientes->have_posts()):  $postAmbientes->the_post()?>
-        <div class="col-md-3 my-4">
-            <div class="container-overlay">
-                <div class="thumb-image" style="background-image: url('<?php the_post_thumbnail_url() ?>')"></div>
-                <div class="overlay">
-                    <h5 class="titulo"><?php the_title()?></h5>
+<section class="ambientes">
+    <div class="container">
+        <div class="row">
+            <?php if ($postAmbientes->have_posts()): while($postAmbientes->have_posts()):  $postAmbientes->the_post()?>
+            <div class="col-md-4">
+                <div class="block-wrapper">
+                <a href="<?php the_permalink() ?>">
+                    <div class="thumb-image" style="background-image: url('<?php the_post_thumbnail_url() ?>')">
+                        <div class="overlay"></div>
+                        <h5 class="titulo"><?php the_title()?></h5>
+                    </div>
+                    </a>
                 </div>
             </div>
+            <?php endwhile;endif;?>
         </div>
-        <?php endwhile;endif;?>
     </div>
-</div>
+</section>
+
 
 <?php get_footer();?>
