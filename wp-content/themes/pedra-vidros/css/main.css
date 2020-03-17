@@ -30,12 +30,11 @@ nav{
 .thumb-image:hover  {
     cursor: pointer;
 }
-
-.thumb-image:hover .titulo {
-    display: block;
+.thumb-image:hover .titulo  {
+    color: white;
 }
+
 .titulo {
-    display: none;
     position: absolute;
     z-index: 20;
     transition: 0.4s;
@@ -276,6 +275,10 @@ a:hover {
     
     font-size:0;
 }
+.title-inseide {
+    text-align: center;
+    font-size: 14px;
+}
 .card-img-top{
     transition:0.1s;
     height:199px
@@ -306,7 +309,7 @@ a:hover {
     z-index: 20;
     font-weight: bold;
     text-align: center;
-    color: white;
+    color: black;
     padding-top: 40px;
 }
 .wrapp-bnt-blocks {

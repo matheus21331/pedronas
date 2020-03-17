@@ -12,11 +12,11 @@
                 while( have_rows('galeria_ambientes') ): the_row(); 
                 $imgAmbientes = get_sub_field('imagem_ambientes_inside');
             ?>
-                <div class="col-md-2">
+                <div class="col-md-4">
                     <div class="block-img">
                         <a class="popup-img" href="<?php echo $imgAmbientes['url']?>">
                             <div class="list-img" style="background-image: url( '<?php echo $imgAmbientes['url']?>' )"></div>
-                            <h3><?php the_sub_field('titulo_ambientes_inside'); ?></h3>
+                            <h3 class="title-inseide"><?php the_sub_field('titulo_ambientes_inside'); ?></h3>
                         </a>
                     </div>
                 </div>
