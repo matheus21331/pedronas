@@ -275,6 +275,10 @@ a:hover {
     
     font-size:0;
 }
+.title-inseide {
+    text-align: center;
+    font-size: 14px;
+}
 .card-img-top{
     transition:0.1s;
     height:199px
