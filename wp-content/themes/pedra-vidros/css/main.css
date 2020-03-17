@@ -30,12 +30,11 @@ nav{
 .thumb-image:hover  {
     cursor: pointer;
 }
-
-.thumb-image:hover .titulo {
-    display: block;
+.thumb-image:hover .titulo  {
+    color: white;
 }
+
 .titulo {
-    display: none;
     position: absolute;
     z-index: 20;
     transition: 0.4s;
@@ -278,7 +277,7 @@ a:hover {
     z-index: 20;
     font-weight: bold;
     text-align: center;
-    color: white;
+    color: black;
     padding-top: 40px;
 }
 .wrapp-bnt-blocks {
