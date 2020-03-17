@@ -61,7 +61,7 @@ nav{
 
 }
 .card-body{
-    border:1px solid red;
+
     color:white;
     background-color:#222;
 }
@@ -80,7 +80,7 @@ nav{
 .navbar-toggler.toggler-example {
     cursor: pointer;
 }
-.ambientes {
+.ambientes, .materiais {
     margin: 60px 0;
 }
 .dark-dark-text {
@@ -257,7 +257,32 @@ a:hover {
     font-size:30px;
     margin-left:10px;
 }
+.card{
+   
+
+    height:200px;
+}
+.card:hover .card-img-top{
+    transition:0.2s;
+    height:275px;
+}
+.card:hover .card-body{
+    transition:2.1s;
+    transition:none;
+    visibility:hidden;
+}
+.card:hover .card-title{
+    
+    font-size:0;
+}
+.card-img-top{
+    transition:0.1s;
+    height:199px
+}
 .card-body{
+    transition:2s;
+    width:100%;
+    bottom:0;
     text-align:center;
 }
    
@@ -266,7 +291,10 @@ a:hover {
     position: relative;
     width: 50%;
 }
-  
+
+  .block-wrapper{
+    margin-top:100px;
+  }
 .image {
     display: block;
     width: 100%;
@@ -292,7 +320,7 @@ a:hover {
     text-align: center;
 }
 .list-img {
-    height: 250px;
+    height: 200px;
     background-position: center;
     background-size: cover;
 }
