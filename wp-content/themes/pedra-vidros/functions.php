@@ -450,3 +450,6 @@ function register_custom_post_types() {
     
 }
 add_action( 'init', 'register_custom_post_types' );
+
+ 	
+

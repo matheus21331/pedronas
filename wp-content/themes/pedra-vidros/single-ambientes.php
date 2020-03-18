@@ -22,8 +22,8 @@
                 </div>
             <?php endwhile;?>
         </div>
-    <?php endif;?>    
-    </div>
+    <?php endif;?> 
+   
 </main>
    
    

@@ -14,15 +14,15 @@
             ?>
                 <div class="col-md-4">
                     <div class="block-img">
-                        <a class="popup-img" href="<?php echo $imgMateriais['url']?>">
-                            <div class="list-img" style="background-image: url( '<?php echo $imgMateriais['url']?>' )"></div>
+                        <a class="popup-img" href="<?php echo $imgmateriais['url']?>">
+                            <div class="list-img" style="background-image: url( '<?php echo $imgmateriais['url']?>' )"></div>
                             <h3 class="title-inseide"><?php the_sub_field('titulo_materiais_inside'); ?></h3>
                         </a>
                     </div>
                 </div>
             <?php endwhile;?>
         </div>
+        
     <?php endif;?>    
-    </div>
 </main>
 <?php get_footer(); ?>
