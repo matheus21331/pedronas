@@ -14,9 +14,8 @@
             ?>
                 <div class="col-md-4">
                     <div class="block-img">
-                        <a class="popup-img" href="<?php echo $imgAmbientes['url']?>">
+                        <a class="popup-img" title="<?php the_sub_field('titulo_ambientes_inside'); ?>" href="<?php echo $imgAmbientes['url']?>">
                             <div class="list-img" style="background-image: url( '<?php echo $imgAmbientes['url']?>' )"></div>
-                            <h3 class="title-inseide"><?php the_sub_field('titulo_ambientes_inside'); ?></h3>
                         </a>
                     </div>
                 </div>
