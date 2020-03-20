@@ -56,27 +56,7 @@
             
         </div>
     </div>
-    <a href="<?php
-    $phone = '55 51 8475-3390';
-    
-    // $message = urlencode($message);
-    // $message = str_replace('+','%20',$message);
-    $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-    $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
-    $palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
-    $berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
-    $ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
-    if ($iphone || $android || $palmpre || $ipod || $berry == true)
-    {
-    echo ('whatsapp://send?phone=555184753390&text=Ola, RS Pedras e vidros');
-    
-    echo ("<script>window.location='whatsapp://send?phone=555184753390&text=Ola, RS Pedras e vidros"+"</script>");
-    }
-    else {
-    echo("https://web.whatsapp.com/send?phone=555184753390&text=Ola, RS Pedras e vidros.");
-    echo( "<script>window.location='https://web.whatsapp.com/send?phone=555184753390&text=Ola, RS Pedras e vidros");
-    }
-    ?>" class="float" target="_blank">
+    <a href="" class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
     </a>
 </section>

@@ -22,10 +22,10 @@
             </a>
         </div>
         <div class="box-title">
-        <a href="http://www.facebook.com/naoseiofacebookdeles" target="_blank">
+        <a href="https://www.facebook.com/RsPedras/" target="_blank">
             <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="http://www.facebook.com/naoseiofacebookdeles" target = "_blank">
+            <a href="https://www.instagram.com/rspedrasmarmores/" target = "_blank">
             <i class="fab fa-instagram"></i>
             </a>
         </div>
