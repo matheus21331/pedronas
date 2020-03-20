@@ -18,7 +18,7 @@ $postMateriais = new WP_Query( $args ); ?>
         <div class="row">
             <?php if ($postMateriais->have_posts()): while($postMateriais->have_posts()):  $postMateriais->the_post()?>
             <div class="col-md-4">
-                <div class="block-wrapper">
+                <div data-aos="fade-right" class="block-wrapper">
                     <div class="card">
                     <a href="<?php the_permalink() ?>">
                         <div class="thumb-image card-img-top" style="background-image: url('<?php the_post_thumbnail_url() ?>')">

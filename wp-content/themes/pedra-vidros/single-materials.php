@@ -12,7 +12,7 @@
                 while( have_rows('galeria_materiais') ): the_row(); 
                 $imgmateriais = get_sub_field('imagem_materiais_inside');
             ?>
-                <div class="col-md-4">
+                <div data-aos="zoom-in" class="col-md-4">
                     <div class="block-img">
                         <a class="popup-img" href="<?php echo $imgmateriais['url']?>">
                             <div class="list-img" style="background-image: url( '<?php echo $imgmateriais['url']?>' )"></div>
