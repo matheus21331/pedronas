@@ -36,7 +36,7 @@
                     </div>
                 
                 </div>
-                <div class = "col-md-4  icones">
+                <div data-aos="zoom-in" class = "col-md-4  icones ">
                     <div class="bx-sh shadow-sm rounded">
                         <i class="fa fa-graduation-cap  fa-4x" aria-hidden="true"></i>
                         <p>Profissionais com mais de 20 anos de experiência!</p>
