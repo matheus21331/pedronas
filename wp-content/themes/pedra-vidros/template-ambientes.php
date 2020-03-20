@@ -13,12 +13,12 @@ get_header();
     'order' => 'DESC',
 );
 $postAmbientes = new WP_Query( $args ); ?>
-<section class="ambientes">
+<section class="ambientes" >
     <div class="container">
         <div class="row">
             <?php if ($postAmbientes->have_posts()): while($postAmbientes->have_posts()):  $postAmbientes->the_post()?>
             <div class="col-md-4">
-                <div class="block-wrapper">
+                <div data-aos="fade-right" class="block-wrapper">
                     <div class="card">
                     <a href="<?php the_permalink() ?>">
                         <div class="thumb-image card-img-top" style="background-image: url('<?php the_post_thumbnail_url() ?>')">

@@ -209,19 +209,19 @@ width:20%;
 }
 .btnZap:hover{
     background-color:#222;
-    color:white;
+    color: white;
 
 }
 .card{
-    margin:20px;
+    margin: 40px 0;
 }
 .card:hover{
-    cursor:pointer; 
+    cursor: pointer; 
 }
 .thumb{
-    height:300px;
-    background-size:cover;
-    background-position:center;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
 }
 .box-title{
     display: flex;
@@ -313,7 +313,9 @@ a:hover {
     padding: 12px;
     padding: 0.75rem;
 }
- 
+ .main-footer {
+    padding: 40px 0;
+ }
 .navigation li a:hover,
 .navigation li.active a {
     background-color: #3C8DC5;
@@ -324,9 +326,6 @@ a:hover {
     width: 50%;
 }
 
-  .block-wrapper{
-    margin-top:100px;
-  }
 .image {
     display: block;
     width: 100%;
