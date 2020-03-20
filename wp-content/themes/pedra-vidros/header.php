@@ -51,30 +51,9 @@
                 </a>
             </div>
             <div class="divbutton">
-                <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-dark-text"><i
-                    class="fas fa-bars fa-1x"></i></span>
-                </button>
+                
             </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="<?php echo home_url()?>">Inicio </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Empresa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo home_url()?>/ambientes">Ambientes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo home_url()?>/materiais">Materiais</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-            </ul>
-        </div>
+        
     </nav>
 </header>
