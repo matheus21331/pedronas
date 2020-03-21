@@ -13,12 +13,12 @@
     <div class="container">
     <div class="row">
         <div data-aos="zoom-in" class="col-md-6 image">
-            <div  class="bg-service" alt="Responsive image" style ="background-image: url('wp-content/themes/pedra-vidros/images/ambientes.jpg')">
+            <div  class="bg-service" alt="Responsive image" style ="background-image: url('<?php echo get_template_directory_uri(); ?>/images/ambientes.jpg')">
                 <a href="<?php echo home_url().'/ambientes'?>" class="text">Ambientes</a>
             </div>
         </div>
         <div data-aos="zoom-in" class="col-md-6 image">
-            <div  class="bg-service" alt="Responsive image" style ="background-image: url('wp-content/themes/pedra-vidros/images/cozinha.jpg')">
+            <div  class="bg-service" alt="Responsive image" style ="background-image: url('<?php echo get_template_directory_uri(); ?>/images/Cozinha.jpg')">
                 <a href="<?php echo home_url().'/materiais'?>" class="text">Materiais</a>
             </div>
         </div>
