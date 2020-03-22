@@ -70,7 +70,7 @@ nav{
 
 #imgmenu{
     text-align:center;
-    width:80px;
+    width:200px;
 }
 
 .navbar-brand{
@@ -124,6 +124,7 @@ nav{
 width:20%;
 }
 .divPai{
+    margin-top:50px;
     text-align:center;
 }
 .d-flex{
@@ -137,6 +138,8 @@ width:20%;
     min-height: 240px;
 }
 .icones{ 
+    margin-top: 50px;
+    margin-bottom:50px;
     text-align: center;
 
 }

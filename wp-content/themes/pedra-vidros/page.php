@@ -3,13 +3,36 @@
 
     
 </main>
-<div class="divPai">
-<i class="fa fa-clock-o" aria-hidden="true"></i> Segunda à sexta – 9:00 às 12:00 - 13:30 às 19:00 | Sábado – de 9:00 à 13:30 
-<p><i class="fa fa-map-marker" aria-hidden="true"></i> Estrada Martim Felix Berta, 370</p>
-    <div data-aos="zoom-in" class="justify-content-center btn btnZap">
-        Entrar em contato via WhatsApp
-    </div>
-</div>
+<div class = "container">
+            <div class = "row">  
+            <div data-aos="zoom-in" class = "col-md-4  icones">
+                    <div class="bx-sh shadow-sm rounded">
+                        <i class="fa fa-users  fa-4x" aria-hidden="true"></i>
+                        <p>Somos uma empresa familiar, conceituada e bem estabelecida no ramo.</p>
+                    </div>
+                
+                </div>          
+                
+                <div data-aos="zoom-in" class = "col-md-4  icones ">
+                    <div class="bx-sh shadow-sm rounded">
+                        <i class="fa fa-graduation-cap  fa-4x" aria-hidden="true"></i>
+                        <p>Profissionais com mais de 20 anos de experiência!</p>
+                    </div>
+                
+                </div>
+                <div data-aos="zoom-in" class = "col-md-4  icones">
+                    <div class="bx-sh shadow-sm rounded">
+                        <i class="fa fa-building  fa-4x" aria-hidden="true"></i>
+                        <p>Trabalhamos com materiais da melhor qualidade, mantendo um alto padrão.</p>
+                    </div>
+                
+                </div>
+            </div>
+
+          
+            
+        </div>
+
     <div class="container">
     <div class="row">
         <div data-aos="zoom-in" class="col-md-6 image">
@@ -24,42 +47,19 @@
         </div>
     </div>  
 
-<section class="about">
-    <div class = "container">
-    
 
-            <div class = "row">            
-                <div data-aos="zoom-in" class = "col-md-4  icones">
-                    <div class="bx-sh shadow-sm rounded">
-                        <i class="fa fa-building  fa-4x" aria-hidden="true"></i>
-                        <p>Trabalhamos com materiais da melhor qualidade, mantendo um alto padrão.</p>
-                    </div>
-                
-                </div>
-                <div data-aos="zoom-in" class = "col-md-4  icones ">
-                    <div class="bx-sh shadow-sm rounded">
-                        <i class="fa fa-graduation-cap  fa-4x" aria-hidden="true"></i>
-                        <p>Profissionais com mais de 20 anos de experiência!</p>
-                    </div>
-                
-                </div>
-                <div data-aos="zoom-in" class = "col-md-4  icones">
-                    <div class="bx-sh shadow-sm rounded">
-                        <i class="fa fa-users  fa-4x" aria-hidden="true"></i>
-                        <p>Somos uma empresa familiar, conceituada e bem estabelecida no ramo.</p>
-                    </div>
-                
-                </div>
-            </div>
-
-          
-            
-        </div>
+    <div class="divPai">
+<i class="fa fa-clock-o" aria-hidden="true"></i> Segunda à sexta – 9:00 às 12:00 - 13:30 às 19:00 | Sábado – de 9:00 à 13:30 
+<p><i class="fa fa-map-marker" aria-hidden="true"></i> Estrada Martim Felix Berta, 370</p>
+    <div data-aos="zoom-in" class="justify-content-center btn btnZap">
+        Entrar em contato via WhatsApp
+    </div>
+</div>
     </div>
     <a href="" class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
     </a>
-</section>
+
 
 
 <?php get_footer(); ?>
