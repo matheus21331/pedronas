@@ -27,7 +27,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>"/>
-    <meta name="google-site-verification" content="-kKwyJVyO5L1Ekxz1MVs6FyIT5hEQbFS2L4zW1o5wSA" />
+    <meta name="google-site-verification" content="cmP2M5wxfpqIenNodcXF7Io-pUFo2BjTHIYxWNmvp9Y" />
     <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen"/>
