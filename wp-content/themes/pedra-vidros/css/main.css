@@ -72,10 +72,12 @@ nav{
     text-align:center;
     width:200px;
 }
-
-.navbar-brand{
-    text-align: center;
+@media only screen and (max-widht: 992px) {
+    .navbar-brand{
+        margin-right: 0;
+    }
 }
+
 
 .navbar-toggler.toggler-example {
     cursor: pointer;
@@ -144,6 +146,8 @@ width:20%;
 
 }
 .bg-service {
+    margin-top: 25px;
+    margin-bottom:25px;
     height: 500px;
     background-size: cover;
     background-position: center;
@@ -152,6 +156,7 @@ width:20%;
     align-items: center;
 }
 .image-left {
+    
     opacity: 1;
     display: block;
     width: 100%;
