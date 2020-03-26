@@ -26,6 +26,12 @@
                     </a>
                 </div>
                 <div class="box-title">
+                    <i class="fas fa-phone-square" id="icone"></i>
+                    <a href="tel:5133685928" class="h6 text-right"id="phone">
+                    (51) 33685928
+                    </a>
+                </div>
+                <div class="box-title">
                 <a href="https://www.facebook.com/RsPedras/" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                     </a>

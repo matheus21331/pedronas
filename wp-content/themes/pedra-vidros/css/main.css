@@ -72,11 +72,11 @@ nav{
     text-align:center;
     width:200px;
 }
-@media only screen and (max-widht: 992px) {
+
     .navbar-brand{
         margin-right: 0;
     }
-}
+
 
 
 .navbar-toggler.toggler-example {
